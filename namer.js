@@ -17,7 +17,7 @@ const fileCategories = {
   videos: ['mp4', 'webm', 'ogv', 'mov', 'avi', 'mkv', 'flv', 'wmv', 'm4v'],
   
   // Audio
-  audio: ['mp3', 'wav', 'oga', 'aac', 'flac', 'm4a', 'wma', 'opus']
+  audio: ['mp3', 'wav', 'oga', 'ogg', 'aac', 'flac', 'm4a', 'wma', 'opus']
 };
 
 export default new Namer({
