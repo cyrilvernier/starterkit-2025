@@ -2,12 +2,28 @@
 <html>
 <head>
   <meta charset="UTF-8" />
-  <title>title</title>
+  <title data-i18n="page.title"></title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/main.css" />
 </head>
 <body>
-  <h1>Hello World!</h1>
+  <nav>
+    <ul>
+      <li><a href="#"><t key="nav.home" /></a></li>
+      <li><a href="#"><t key="nav.about" /></a></li>
+      <li><a href="#"><t key="nav.contact" /></a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1><t key="home.headline" /></h1>
+    <p><t key="home.subtitle" /></p>
+    <button><t key="home.cta" /></button>
+  </main>
+
+  <footer>
+    <p><t key="footer.copyright" /></p>
+  </footer>
 
   <script src="js/main.js" type="module"></script>
 </body>

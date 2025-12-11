@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Language Selection</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: system-ui, -apple-system, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    }
+    .container {
+      text-align: center;
+      background: white;
+      padding: 3rem;
+      border-radius: 12px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    }
+    h1 {
+      color: #333;
+      margin: 0 0 2rem;
+      font-size: 2rem;
+    }
+    p {
+      color: #666;
+      margin: 0 0 2rem;
+    }
+    .links {
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+    }
+    a {
+      padding: 0.75rem 1.5rem;
+      background: #667eea;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: all 0.3s;
+      font-size: 1rem;
+    }
+    a:hover {
+      background: #764ba2;
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+    }
+    .auto-redirect {
+      font-size: 0.875rem;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🌍 Choose Your Language</h1>
+    <p>Automatic redirection in 3 seconds...</p>
+    <div class="links">
+      <a href="./fr-FR/">🇫🇷 Français</a>
+      <a href="./en-US/">🇺🇸 English</a>
+    </div>
+    <p class="auto-redirect">
+      (Select language or page will auto-redirect based on browser language)
+    </p>
+  </div>
+  <script>
+    // Détection automatique de la langue du navigateur
+    const userLang = navigator.language || navigator.userLanguage;
+    const lang = userLang.startsWith('fr') ? 'fr-FR' : 'en-US';
+    
+    // Redirection après 3 secondes ou au clic
+    const redirectTimer = setTimeout(() => {
+      window.location.href = './' + lang + '/';
+    }, 3000);
+    
+    // Clic sur un lien annule la redirection auto
+    document.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        clearTimeout(redirectTimer);
+      });
+    });
+  </script>
+</body>
+</html>

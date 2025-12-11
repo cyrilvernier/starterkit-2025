@@ -1,0 +1,20 @@
+{
+  "page": {
+    "title": "Mon Site Multilingue",
+    "lang": "fr-FR"
+  },
+  "home": {
+    "headline": "Bonjour le monde !",
+    "subtitle": "Bienvenue sur notre site localisé",
+    "cta": "Commencer"
+  },
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "contact": "Contact"
+  },
+  "footer": {
+    "copyright": "© 2025 Mon Entreprise. Tous droits réservés.",
+    "language": "Langue"
+  }
+}

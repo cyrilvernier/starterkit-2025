@@ -1,0 +1,20 @@
+{
+  "page": {
+    "title": "My Multilingual Site",
+    "lang": "en-US"
+  },
+  "home": {
+    "headline": "Hello World!",
+    "subtitle": "Welcome to our localized website",
+    "cta": "Get Started"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "footer": {
+    "copyright": "© 2025 My Company. All rights reserved.",
+    "language": "Language"
+  }
+}

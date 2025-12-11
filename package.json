@@ -7,14 +7,17 @@
     "clean-output": "rm -rf dist",
     "start": "npm parcel src/index.html",
     "dev": "npm run clean-cache && parcel src/index.html --open",
-    "build": "npm run clean-output && parcel build src/index.html --public-url '.' --no-cache"
+    "build": "npm run clean-output && node build-i18n.js",
+    "build:single": "parcel build src/index.html --public-url '.' --no-cache"
   },
   "devDependencies": {
     "@parcel/plugin": "^2.15.4",
     "@parcel/transformer-image": "^2.15.4",
     "parcel": "^2.15.4",
+    "posthtml": "^0.16.6",
     "sharp": "^0.33.5"
   },
+  "dependencies": {},
   "browserslist": [
     "last 2 versions",
     "not dead"
