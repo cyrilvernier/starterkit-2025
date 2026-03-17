@@ -2,6 +2,7 @@
   "name": "Starterkit",
   "version": "1.0.0",
   "description": "Web project starter kit with Parcel and image optimization",
+  "type": "module",
   "scripts": {
     "clean-cache": "rm -rf dist .parcel-cache",
     "clean-output": "rm -rf dist",
